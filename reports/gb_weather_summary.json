@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Gilgit-Baltistan Historical Weather Dataset",
+    "source": "Open-Meteo Historical Weather API (ERA5 reanalysis, ECMWF)",
+    "period": "1990-01-01 to 2024-12-31",
+    "generated": "2026-04-22T16:42:42.983597Z",
+    "variables": [
+      "temperature_2m_max",
+      "temperature_2m_min",
+      "temperature_2m_mean",
+      "apparent_temperature_max",
+      "apparent_temperature_min",
+      "apparent_temperature_mean",
+      "precipitation_sum",
+      "rain_sum",
+      "snowfall_sum",
+      "precipitation_hours",
+      "wind_speed_10m_max",
+      "wind_speed_10m_mean",
+      "wind_gusts_10m_max",
+      "wind_direction_10m_dominant",
+      "shortwave_radiation_sum",
+      "et0_fao_evapotranspiration",
+      "uv_index_max",
+      "sunshine_duration",
+      "daylight_duration",
+      "cloud_cover_mean",
+      "sunrise",
+      "sunset",
+      "weather_code"
+    ],
+    "stations": 2,
+    "license": "CC BY 4.0 (Open-Meteo) — ERA5 © Copernicus Climate Change Service",
+    "data_quality_notes": {
+      "era5_discontinuity": {
+        "break_date": "2016-01-01",
+        "description": "ERA5 reanalysis has a known systematic discontinuity around 2016 caused by updates to the ECMWF data assimilation system and changes in satellite input streams. Over complex terrain like Gilgit-Baltistan this manifests as jumps in precipitation totals and temperature bias. The 'era5_period' column flags pre_2016 vs post_2016 rows. For ML training: either (a) use post-2016 data only, (b) add era5_period as a categorical feature, or (c) apply per-station bias correction between periods.",
+        "affected_variables": [
+          "precipitation_sum",
+          "rain_sum",
+          "snowfall_sum",
+          "temperature_2m_mean",
+          "cloud_cover_mean"
+        ],
+        "recommendation": "Use era5_period as a covariate or train only on post_2016 data."
+      },
+      "mountain_terrain": "ERA5 grid resolution (~9km) cannot fully resolve the extreme elevation gradients of GB. Values at high-altitude stations like Khunjerab (4693m) should be treated as area-averaged estimates."
+    }
+  },
+  "stations": [
+    {
+      "station": "Gilgit",
+      "district": "Gilgit",
+      "lat": 35.9208,
+      "lon": 74.3083,
+      "elevation_m": 1500,
+      "period": "1990-01-01 to 2024-12-31",
+      "total_days": 12784,
+      "climate": {
+        "temp_mean_c": 11.02,
+        "temp_max_ever_c": 40.5,
+        "temp_min_ever_c": -20.9,
+        "annual_precip_mm": 1307.5,
+        "annual_snowfall_cm": 501.8,
+        "frost_days_per_year": 111.7,
+        "hot_days_per_year": 6.1,
+        "rain_days_per_year": 165.3,
+        "heavy_rain_days_yr": 10.1,
+        "snow_days_per_year": 128.0,
+        "wind_max_kmh": 11.2,
+        "wind_mean_max_kmh": 2.9,
+        "humidity_mean_pct": null,
+        "freeze_level_mean_m": null
+      }
+    },
+    {
+      "station": "Skardu",
+      "district": "Skardu-Baltistan",
+      "lat": 35.2971,
+      "lon": 75.6875,
+      "elevation_m": 2228,
+      "period": "1990-01-01 to 2024-12-31",
+      "total_days": 12784,
+      "climate": {
+        "temp_mean_c": 5.05,
+        "temp_max_ever_c": 35.8,
+        "temp_min_ever_c": -24.7,
+        "annual_precip_mm": 1026.5,
+        "annual_snowfall_cm": 423.7,
+        "frost_days_per_year": 177.6,
+        "hot_days_per_year": 0.1,
+        "rain_days_per_year": 152.5,
+        "heavy_rain_days_yr": 4.7,
+        "snow_days_per_year": 140.1,
+        "wind_max_kmh": 11.3,
+        "wind_mean_max_kmh": 3.5,
+        "humidity_mean_pct": null,
+        "freeze_level_mean_m": null
+      }
+    }
+  ]
+}
