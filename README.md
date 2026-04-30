@@ -22,9 +22,9 @@ A 35-year daily weather dataset for Gilgit-Baltistan, Pakistan. Fetched from the
 | Hunza | Hunza | 2438m | 36.3167 | 74.6500 | Downloaded |
 | Chilas | Diamer | 1250m | 35.4167 | 74.1000 | Downloaded |
 | Khunjerab | Hunza | 4693m | 36.8333 | 75.4167 | Downloaded |
-| Astore | Astore | 2168m | 35.3667 | 74.9167 | Rate-limited, retry needed |
-| Gupis | Ghizer | 2156m | 36.1667 | 73.4000 | Rate-limited, retry needed |
-| Bunji | Astore | 760m | 35.6500 | 74.6333 | Rate-limited, retry needed |
+| Astore | Astore | 2168m | 35.3667 | 74.9167 | pending |
+| Gupis | Ghizer | 2156m | 36.1667 | 73.4000 | pending |
+| Bunji | Astore | 760m | 35.6500 | 74.6333 | pending |
 
 ---
 
