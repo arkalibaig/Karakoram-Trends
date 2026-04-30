@@ -94,43 +94,48 @@ Why monthly instead of annual: A single annual correction factor would fix one s
 
 ```
 gb_weather_analysis/
-├── actual_trend.py
-├── bias_correction_report.json
-├── bias_correct.py
-├── chart5_rain_snow.png
-├── chilas_corrected.csv
-├── chilas_weather.csv
-├── fetch_gb_weather.py
-├── figures/
-│   ├── bias_correction_visual.png
-│   ├── bias_heatmap.png
-│   ├── bias_jump_zoom.png
-│   ├── chart1_problem.png
-│   ├── chart2_decades.png
-│   ├── chart3_fake_vs_real.png
-│   ├── chart4_timeline.png
-│   ├── clean_decades.png
-│   ├── clean_jump_proof.png
-│   ├── clean_precipitation.png
-│   ├── clean_temperature.png
-│   └── GB_Climate_Report.png
-├── gb_weather_combined.csv
-├── gb_weather_corrected.csv
-├── gb_weather_summary.json
-├── gilgit_corrected.csv
-├── gilgit_weather.csv
-├── hunza_corrected.csv
-├── hunza_weather.csv
-├── khunjerab_corrected.csv
-├── khunjerab_weather.csv
+├── data
+│   ├── chilas_corrected.csv
+│   ├── chilas_weather.csv
+│   ├── gb_weather_combined.csv
+│   ├── gb_weather_corrected.csv
+│   ├── gilgit_corrected.csv
+│   ├── gilgit_weather.csv
+│   ├── hunza_corrected.csv
+│   ├── hunza_weather.csv
+│   ├── khunjerab_corrected.csv
+│   ├── khunjerab_weather.csv
+│   ├── skardu_corrected.csv
+│   └── skardu_weather.csv
+├── figures
+│   ├── bias_correction_visual.png
+│   ├── bias_heatmap.png
+│   ├── bias_jump_zoom.png
+│   ├── chart1_problem.png
+│   ├── chart2_decades.png
+│   ├── chart3_fake_vs_real.png
+│   ├── chart4_timeline.png
+│   ├── chart5_rain_snow.png
+│   ├── clean_decades.png
+│   ├── clean_jump_proof.png
+│   ├── clean_precipitation.png
+│   ├── clean_temperature.png
+│   └── GB_Climate_Report.png
 ├── README.md
-├── report.py
-├── simple_charts.py
-├── skardu_corrected.csv
-├── skardu_weather.csv
-├── trend_analysis.py
-├── visualize_bias.py
-└── visualize_clean.py
+├── reports
+│   ├── bias_correction_report.json
+│   ├── gb_weather_summary.json
+│   └── report.py
+├── requirements.txt
+└── src
+    ├── actual_trend.py
+    ├── bias_correct.py
+    ├── fetch_gb_weather.py
+    ├── simple_charts.py
+    ├── trend_analysis.py
+    ├── visualize_bias.py
+    └── visualize_clean.py
+
 ```
 
 ---
