@@ -1,3 +1,7 @@
+### Research Origins
+This project is an evolution of my original investigation into Karakoram climate anomalies. You can find the initial discovery of the 2016 structural break including the raw logs where a **4.54°C baseline jump** was first identified in my legacy repository:
+https://github.com/arkalibaig/hunza-climate-analysis
+
 # Gilgit-Baltistan Historical Weather Dataset
 **Period:** 1990 to 2024 | **Stations:** 5 (8 planned) | **Source:** ERA5 via Open-Meteo
 
