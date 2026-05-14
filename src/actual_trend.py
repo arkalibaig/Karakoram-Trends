@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 What is the ACTUAL warming trend in GB — corrected data, full period.
-Compares: raw trend (what shocked you) vs corrected trend (reality).
+Compares: raw trend (unbiased baseline) vs corrected trend (reality).
 """
 
 import os
@@ -116,7 +116,7 @@ for var, label, unit in [
               f"{gb_raw-gb_corr:>+10.3f}{unit}  ← GB-wide inflation")
         if label == "Mean Temperature":
             print(f"\n  ┌─────────────────────────────────────────────────────────────────┐")
-            print(f"  │  Your model saw    : {gb_raw:+.3f}°C/decade  (raw, with 2016 jump)    │")
+            print(f"  │  Initial estimate  : {gb_raw:+.3f}°C/decade  (raw, with 2016 jump)    │")
             print(f"  │  ACTUAL trend is   : {gb_corr:+.3f}°C/decade  (bias-corrected)         │")
             print(f"  │  The jump added    : {gb_raw-gb_corr:+.3f}°C/decade  FAKE warming              │")
             print(f"  └─────────────────────────────────────────────────────────────────┘")
@@ -126,7 +126,7 @@ print("  INTERPRETATION")
 print(f"{'─'*70}")
 print("""
   The ERA5 2016 jump is a STEP CHANGE, not a gradual trend.
-  When your model fit a straight line over 1990-2024 on raw data,
+  When fitting a straight line over 1990-2024 on raw data,
   the step inflated the slope — it looked like fast warming because
   the line was trying to connect a low 1990s baseline to an
   artificially high post-2016 level.
@@ -141,5 +141,5 @@ print("""
   • Consistent with IPCC HKH (Hindu Kush Himalaya) regional estimates
     of 0.2–0.5°C/decade for high mountain Asia
   • The REAL number is scientifically defensible
-  • The 2.35°C/decade you saw was ~5–10× too high
+  • The 2.35°C/decade initially observed was ~5–10× too high
 """)

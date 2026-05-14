@@ -99,18 +99,7 @@ Why monthly instead of annual: A single annual correction factor would fix one s
 ```
 gb_weather_analysis/
 ├── data
-│   ├── chilas_corrected.csv
-│   ├── chilas_weather.csv
-│   ├── gb_weather_combined.csv
-│   ├── gb_weather_corrected.csv
-│   ├── gilgit_corrected.csv
-│   ├── gilgit_weather.csv
-│   ├── hunza_corrected.csv
-│   ├── hunza_weather.csv
-│   ├── khunjerab_corrected.csv
-│   ├── khunjerab_weather.csv
-│   ├── skardu_corrected.csv
-│   └── skardu_weather.csv
+│  └──gb_weather_corrected.csv
 ├── figures
 │   ├── bias_correction_visual.png
 │   ├── bias_heatmap.png

@@ -41,16 +41,13 @@ from datetime import datetime, date
 # ── Configuration ─────────────────────────────────────────────────────────────
 START_DATE = "1990-01-01"
 END_DATE   = "2024-12-31"
-OUT_DIR    = os.path.dirname(os.path.abspath(__file__))
+# Correct OUT_DIR to be the 'data' directory relative to the project root
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUT_DIR    = os.path.join(os.path.dirname(SCRIPT_DIR), "data")
 
 STATIONS = [
-    {"name": "Gilgit",    "lat": 35.9208, "lon": 74.3083, "elevation": 1500, "district": "Gilgit"},
-    {"name": "Skardu",    "lat": 35.2971, "lon": 75.6875, "elevation": 2228, "district": "Skardu-Baltistan"},
-    {"name": "Hunza",     "lat": 36.3167, "lon": 74.6500, "elevation": 2438, "district": "Hunza"},
     {"name": "Astore",    "lat": 35.3667, "lon": 74.9167, "elevation": 2168, "district": "Astore"},
     {"name": "Gupis",     "lat": 36.1667, "lon": 73.4000, "elevation": 2156, "district": "Ghizer"},
-    {"name": "Khunjerab", "lat": 36.8333, "lon": 75.4167, "elevation": 4693, "district": "Hunza"},
-    {"name": "Chilas",    "lat": 35.4167, "lon": 74.1000, "elevation": 1250, "district": "Diamer"},
     {"name": "Bunji",     "lat": 35.6500, "lon": 74.6333, "elevation": 760,  "district": "Astore"},
 ]
 
@@ -326,7 +323,7 @@ def main():
         time.sleep(12)  # respect rate limits (free tier ~5 req/min)
 
     if not all_data:
-        print("\nNo data fetched. Check your internet connection.")
+        print("\nNo data fetched. Please verify network connection and API status.")
         return
 
     print("\nSaving combined dataset...")
