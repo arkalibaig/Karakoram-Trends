@@ -163,7 +163,6 @@ Use `gb_weather_corrected.csv` as the primary dataset.
 **Column guidance:**
 - `bias_corrected` = 1 means this row was adjusted (pre-2016). Keep as a feature.
 - `era5_period` = pre_2016 or post_2016. Include as categorical feature.
-- Do not use `gb_weather_combined.csv` for training — it contains the uncorrected jump.
 
 **Noise reduction used in analysis:**
 1. Aggregate daily data to annual means
