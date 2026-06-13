@@ -3,7 +3,9 @@ This project is an evolution of my original investigation into Karakoram climate
 https://github.com/arkalibaig/hunza-climate-analysis
 
 # Gilgit-Baltistan Historical Weather Dataset
-**Period:** 1990 to 2024 | **Stations:** 5 (8 planned) | **Source:** ERA5 via Open-Meteo
+**Period:** 1990 to 2024 | **Stations:** 5 | **Source:** ERA5 via Open-Meteo
+
+**Dataset:** [Karakoram ERA5 Climate Dataset on Kaggle](https://www.kaggle.com/datasets/arkalibaig/karakoram-era5-climate-dataset)
 
 ---
 
@@ -168,14 +170,6 @@ Use `gb_weather_corrected.csv` as the primary dataset.
 1. Aggregate daily data to annual means
 2. Apply 3-year rolling mean on annual data
 3. Fit linear trends via numpy polyfit on smoothed annual series
-
----
-
-## Pending Work
-
-- Re-run `fetch_gb_weather.py` to download Astore, Gupis and Bunji (rate-limited during first run)
-- Re-run `bias_correct.py` after downloading the remaining 3 stations
-- These stations cover the eastern valleys and Ghizer district which have different precipitation patterns than the Karakoram corridor stations
 
 ---
 
