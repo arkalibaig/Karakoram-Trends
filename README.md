@@ -17,13 +17,13 @@ A 35-year daily weather dataset for Gilgit-Baltistan, Pakistan. Fetched from the
 
 ## Stations
 
-| Station | District | Elevation | Latitude | Longitude | Status |
+| Station | District | Elevation | Latitude | Longitude | 
 |---|---|---|---|---|---|
-| Gilgit | Gilgit | 1500m | 35.9208 | 74.3083 | Downloaded |
-| Skardu | Skardu-Baltistan | 2228m | 35.2971 | 75.6875 | Downloaded |
-| Hunza | Hunza | 2438m | 36.3167 | 74.6500 | Downloaded |
-| Chilas | Diamer | 1250m | 35.4167 | 74.1000 | Downloaded |
-| Khunjerab | Hunza | 4693m | 36.8333 | 75.4167 | Downloaded |
+| Gilgit | Gilgit | 1500m | 35.9208 | 74.3083 | 
+| Skardu | Skardu-Baltistan | 2228m | 35.2971 | 75.6875 | 
+| Hunza | Hunza | 2438m | 36.3167 | 74.6500 | 
+| Chilas | Diamer | 1250m | 35.4167 | 74.1000 | 
+| Khunjerab | Hunza | 4693m | 36.8333 | 75.4167 | 
 
 ---
 
