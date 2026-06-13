@@ -18,7 +18,7 @@ A 35-year daily weather dataset for Gilgit-Baltistan, Pakistan. Fetched from the
 ## Stations
 
 | Station | District | Elevation | Latitude | Longitude | 
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | Gilgit | Gilgit | 1500m | 35.9208 | 74.3083 | 
 | Skardu | Skardu-Baltistan | 2228m | 35.2971 | 75.6875 | 
 | Hunza | Hunza | 2438m | 36.3167 | 74.6500 | 
