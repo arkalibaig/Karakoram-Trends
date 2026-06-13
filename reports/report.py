@@ -8,8 +8,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import textwrap
+import pathlib
 
-OUT = "/Users/mac/Desktop/gb_weather_dataset/GB_Climate_Report.png"
+OUT = str(pathlib.Path(__file__).parent / "GB_Climate_Report.png")
 
 def draw_report():
     # Wide, moderately tall — 2400 x 3400 px at 100 dpi
