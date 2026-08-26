@@ -145,13 +145,17 @@ Stations below 2,500m (Gilgit, Chilas, Skardu) recorded 5 to 9 percent less snow
 
 **Reasons for changes**
 1. Global greenhouse gas emissions driving background warming
-2. Altitude amplification — thin cold air magnifies temperature changes
+2. Altitude amplification thin cold air magnifies temperature changes
 3. Black carbon soot from South Asian pollution settling on glaciers
 4. Shrinking snow cover exposing heat-absorbing dark rock
 5. Weakening Western Disturbances delivering less winter moisture
 6. Indian Monsoon shifting later and shorter each year
 7. Jet stream moving northward pushing storm tracks away from GB
 8. Karakoram Anomaly (glacier growth phenomenon) weakening
+
+**Data correction note:**
+
+265 records **(0.4% of the dataset)** contained negative sunshine_duration values, physically impossible for a duration measurement. These were concentrated at higher elevation stations **(Hunza: 119 records)** and predominantly occurred during winter and shoulder months (Jan, Mar, Nov), consistent with persistent cloud cover reducing sunlight to near zero, a known limitation in ERA5's radiation modeling under low sun conditions.
 
 ---
 
